@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea709c74daf4f55e2eb36ea74104e8e7",
+    "content-hash": "fa4e4f8d0786f98c7f748e1a59c1fd8a",
     "packages": [
         {
             "name": "brick/math",
@@ -894,6 +894,50 @@
             "time": "2022-06-20T21:43:11+00:00"
         },
         {
+            "name": "jzzoo/laravel-mqttx",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jzzoo/laravel-mqttx.git",
+                "reference": "1fd98650f37b824bd8474cea0fa8d971d121e8ff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jzzoo/laravel-mqttx/zipball/1fd98650f37b824bd8474cea0fa8d971d121e8ff",
+                "reference": "1fd98650f37b824bd8474cea0fa8d971d121e8ff",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "laravel/framework": ">=5.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jzzoo\\Laravel\\Mqttx\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jzzoo",
+                    "email": "jzzoo@qq.com"
+                }
+            ],
+            "description": "A simple PHP Laravel framework MQTT library, very convenient to use",
+            "support": {
+                "issues": "https://github.com/jzzoo/laravel-mqttx/issues",
+                "source": "https://github.com/jzzoo/laravel-mqttx/tree/1.1.1"
+            },
+            "abandoned": "jzzoo/laravel-mqttx",
+            "time": "2021-06-15T08:30:38+00:00"
+        },
+        {
             "name": "laravel/framework",
             "version": "v9.20.0",
             "source": {
@@ -1703,6 +1747,69 @@
             "time": "2022-06-09T08:59:12+00:00"
         },
         {
+            "name": "myclabs/php-enum",
+            "version": "1.8.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/myclabs/php-enum.git",
+                "reference": "a867478eae49c9f59ece437ae7f9506bfaa27483"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/myclabs/php-enum/zipball/a867478eae49c9f59ece437ae7f9506bfaa27483",
+                "reference": "a867478eae49c9f59ece437ae7f9506bfaa27483",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.3 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5",
+                "squizlabs/php_codesniffer": "1.*",
+                "vimeo/psalm": "^4.6.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MyCLabs\\Enum\\": "src/"
+                },
+                "classmap": [
+                    "stubs/Stringable.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP Enum contributors",
+                    "homepage": "https://github.com/myclabs/php-enum/graphs/contributors"
+                }
+            ],
+            "description": "PHP Enum implementation",
+            "homepage": "http://github.com/myclabs/php-enum",
+            "keywords": [
+                "enum"
+            ],
+            "support": {
+                "issues": "https://github.com/myclabs/php-enum/issues",
+                "source": "https://github.com/myclabs/php-enum/tree/1.8.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/mnapoli",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/myclabs/php-enum",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-08-04T09:53:51+00:00"
+        },
+        {
             "name": "nesbot/carbon",
             "version": "2.59.1",
             "source": {
@@ -2006,6 +2113,63 @@
                 "source": "https://github.com/nikic/PHP-Parser/tree/v4.14.0"
             },
             "time": "2022-05-31T20:59:12+00:00"
+        },
+        {
+            "name": "php-mqtt/client",
+            "version": "v1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-mqtt/client.git",
+                "reference": "d54381306e68baf7c2c089392c0c6d1d06e278c6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-mqtt/client/zipball/d54381306e68baf7c2c089392c0c6d1d06e278c6",
+                "reference": "d54381306e68baf7c2c089392c0c6d1d06e278c6",
+                "shasum": ""
+            },
+            "require": {
+                "myclabs/php-enum": "^1.7",
+                "php": "^7.4|^8.0",
+                "psr/log": "^1.1|^2.0|^3.0"
+            },
+            "require-dev": {
+                "phpunit/php-invoker": "^3.0",
+                "phpunit/phpunit": "^9.0",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "suggest": {
+                "ext-redis": "Required for the RedisRepository"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpMqtt\\Client\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marvin Mall",
+                    "email": "marvin-mall@msn.com",
+                    "role": "developer"
+                }
+            ],
+            "description": "An MQTT client written in and for PHP.",
+            "keywords": [
+                "client",
+                "mqtt",
+                "publish",
+                "subscribe"
+            ],
+            "support": {
+                "issues": "https://github.com/php-mqtt/client/issues",
+                "source": "https://github.com/php-mqtt/client/tree/v1.4.0"
+            },
+            "time": "2022-06-15T19:19:03+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -2734,6 +2898,98 @@
                 }
             ],
             "time": "2022-03-27T21:42:02+00:00"
+        },
+        {
+            "name": "salmanzafar/laravel-mqtt",
+            "version": "v2.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/salmanzafar949/MQTT-Laravel.git",
+                "reference": "5f08c39070ab3373ec33da2c92e91407ef893f6c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/salmanzafar949/MQTT-Laravel/zipball/5f08c39070ab3373ec33da2c92e91407ef893f6c",
+                "reference": "5f08c39070ab3373ec33da2c92e91407ef893f6c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0 || ^7.1 || ^7.2 || ^7.3 || ^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "laravel/framework": "^5.5 || ^6.0 || ^7.0 || ^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Salman\\Mqtt\\MqttServiceProvider"
+                    ],
+                    "aliases": {
+                        "Mqtt": "Salman\\Mqtt\\Facades\\Mqtt"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Helper/Helpers.php"
+                ],
+                "psr-4": {
+                    "Salman\\Mqtt\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Salman Zafar",
+                    "email": "salmanzafar949@gmail.com"
+                }
+            ],
+            "description": "A simple Laravel Library to connect/publish/subscribe to MQTT broker",
+            "keywords": [
+                "PHP 5.4",
+                "laravel",
+                "laravel mqtt",
+                "laravel mqtt library",
+                "laravel-5",
+                "laravel-6",
+                "laravel-7",
+                "laravel-8",
+                "laravel-mqtt",
+                "laravel5",
+                "laravel6",
+                "laravel7",
+                "laravel8",
+                "mqtt laravel",
+                "mqtt-laravel",
+                "mqtt-laravel-publisher",
+                "mqtt-laravel-subscriber",
+                "php",
+                "php 7.0",
+                "php 7.1",
+                "php 7.2",
+                "php 7.3",
+                "php 7.4",
+                "php 8"
+            ],
+            "support": {
+                "issues": "https://github.com/salmanzafar949/MQTT-Laravel/issues",
+                "source": "https://github.com/salmanzafar949/MQTT-Laravel/tree/v2.0.8"
+            },
+            "funding": [
+                {
+                    "url": "https://www.buymeacoffee.com/salmanzafar949",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/salmanzafar949",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2021-05-07T12:34:36+00:00"
         },
         {
             "name": "symfony/console",

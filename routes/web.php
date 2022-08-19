@@ -1,5 +1,7 @@
 <?php
 
+use App\Events\ServerCreated;
+use App\Http\Controllers\Admin;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Support\Facades\Route;
@@ -14,9 +16,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::get('/', [Admin::class, 'index'])->middleware('auth')->name('dashboard');
+Route::get('/test', function() {
+    ServerCreated::dispatch('hai');
+    echo 'Test';
+});
 
 Route::get('/register', [RegisteredUserController::class,'create'] )->name('register');
 
